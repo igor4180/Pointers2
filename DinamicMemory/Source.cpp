@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -8,7 +8,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int n = 5;
-	cout << "Ââåäèòå ðàçìåð ìàññèâà:"; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°:"; cin >> n;
 	int* arr = new int[n];
 	for (int i = 0; i < n; i++)
 	{
@@ -32,8 +32,8 @@ void main()
         if (arr[i] % 2 != 0)  
             odd++;
     }
-    cout << " ×åòíûõ ýëåìåíòîâ: " << even << endl;
-    cout << " Íå÷åòíûõ ýëåìåíòîâ: " << odd << endl;
+    cout << " Ð§ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << even << endl;
+    cout << " ÐÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << odd << endl;
     
 
     int* Even_arr = new int[even]; 
@@ -58,14 +58,14 @@ void main()
 #endif
 
     bool Print_array = false;
-    cout << " Âûâåñòè íà ýêðàí ìàññèâ ñ ÷åòíûìè ýëåìåíòàìè? 0 - íåò | 1 - äà : ";
+    cout << " Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð½Ð° ÑÐºÑ€Ð°Ð½ Ð¼Ð°ÑÑÐ¸Ð² Ñ Ñ‡ÐµÑ‚Ð½Ñ‹Ð¼Ð¸ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼Ð¸? 0 - Ð½ÐµÑ‚ | 1 - Ð´Ð° : ";
     cin >> Print_array;
 
     if (Print_array == true)
     {
         for (int i = 0; i <= Counter_even - 1; i++)
         {
-            cout << i << " ýëåìåíò ÷åòíîãî ìàññèâà = " << Even_arr[i] << endl;
+            cout << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ñ‡ÐµÑ‚Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << Even_arr[i] << endl;
         }
         Print_array = false;
     }
@@ -73,14 +73,14 @@ void main()
     system("pause");
     system("cls");
 
-    cout << " Âûâåñòè íà ýêðàí ìàññèâ ñ íå÷åòíûìè ýëåìåíòàìè? 0 - íåò | 1 - äà : ";
+    cout << " Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð½Ð° ÑÐºÑ€Ð°Ð½ Ð¼Ð°ÑÑÐ¸Ð² Ñ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ð¼Ð¸ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼Ð¸? 0 - Ð½ÐµÑ‚ | 1 - Ð´Ð° : ";
     cin >> Print_array;
 
     if (Print_array == true)
     {
         for (int i = 0; i <= Counter_odd - 1; i++)
         {
-            cout << i << " ýëåìåíò íå÷åòíîãî ìàññèâà = " << Odd_arr[i] << endl;
+            cout << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð½ÐµÑ‡ÐµÑ‚Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << Odd_arr[i] << endl;
         }
         Print_array = false;
     }
